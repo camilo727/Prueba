@@ -1,0 +1,14 @@
+C:\Users\camil\source\repos\PruebaTecnica\Modelos\bin\Debug\net8.0\Modelos.deps.json
+C:\Users\camil\source\repos\PruebaTecnica\Modelos\bin\Debug\net8.0\Modelos.runtimeconfig.json
+C:\Users\camil\source\repos\PruebaTecnica\Modelos\bin\Debug\net8.0\Modelos.dll
+C:\Users\camil\source\repos\PruebaTecnica\Modelos\bin\Debug\net8.0\Modelos.pdb
+C:\Users\camil\source\repos\PruebaTecnica\Modelos\obj\Debug\net8.0\Modelos.csproj.AssemblyReference.cache
+C:\Users\camil\source\repos\PruebaTecnica\Modelos\obj\Debug\net8.0\Modelos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\camil\source\repos\PruebaTecnica\Modelos\obj\Debug\net8.0\Modelos.AssemblyInfoInputs.cache
+C:\Users\camil\source\repos\PruebaTecnica\Modelos\obj\Debug\net8.0\Modelos.AssemblyInfo.cs
+C:\Users\camil\source\repos\PruebaTecnica\Modelos\obj\Debug\net8.0\Modelos.csproj.CoreCompileInputs.cache
+C:\Users\camil\source\repos\PruebaTecnica\Modelos\obj\Debug\net8.0\Modelos.dll
+C:\Users\camil\source\repos\PruebaTecnica\Modelos\obj\Debug\net8.0\refint\Modelos.dll
+C:\Users\camil\source\repos\PruebaTecnica\Modelos\obj\Debug\net8.0\Modelos.pdb
+C:\Users\camil\source\repos\PruebaTecnica\Modelos\obj\Debug\net8.0\Modelos.genruntimeconfig.cache
+C:\Users\camil\source\repos\PruebaTecnica\Modelos\obj\Debug\net8.0\ref\Modelos.dll

@@ -1,0 +1,102 @@
+﻿@using Servicio.DTOs
+@model ICollection<AutorDTOs>;
+@{
+    ViewData["Title"] = "Autor";
+}
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        function confirmarEliminacion(id) {
+            Swal.fire({
+                title: "¿Estás seguro?",
+                text: "¡No podrás revertir esto!",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#d33",
+                cancelButtonColor: "#3085d6",
+                confirmButtonText: "Sí, eliminar",
+                cancelButtonText: "Cancelar"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = "/Autor/Eliminar/" + id;
+                }
+            });
+        }
+        function soloLetras(event) {
+            var charCode = event.which || event.keyCode;
+            var char = String.fromCharCode(charCode);
+            var regex = /^[A-Za-zÁÉÍÓÚáéíóúñÑ ]+$/;
+            return regex.test(char);
+        }
+    </script>
+
+}
+@if (TempData["Mensaje"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        @TempData["Mensaje"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+@if (TempData["MensajeAdvertencia"] != null)
+{
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        @TempData["MensajeAdvertencia"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+@if (TempData["ErrorMensaje"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        @TempData["ErrorMensaje"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+<div class="row">
+   <center>
+       <h1>
+           Lista de Autor
+       </h1>
+   </center>
+
+</div>
+
+
+<div class="row">
+    <div class="d-grid gap-2">
+        <a asp-controller="Autor" asp-action="Agregar" class="btn btn-success">Agregar</a>
+    </div>
+  
+</div>
+<div class="row" style="padding:10px">
+
+    <table class="table table-info table-striped">
+       <thead>
+            <tr >
+                <th >Id</th>
+               <th>Nombre</th>
+               <th>descripción</th>
+               <th>Modificar</th>
+               <th>Eliminar</th>
+
+           </tr>
+       </thead>
+       <tbody>
+            @foreach (var Item in Model)
+            {
+                <tr>
+                    <td>@Item.Id</td>
+                    <td>@Item.Nombre</td>
+                    <td>@Item.Descripcion</td>
+                    <td><a asp-controller="Autor" asp-route-Id="@Item.Id" asp-action="Modificar" class="btn btn-warning">Modificar</a></td>
+                    <td><button class="btn btn-danger" onclick="confirmarEliminacion(@Item.Id)">Eliminar</button></td>
+                </tr>
+            }
+        </tbody>
+   </table>
+</div>
+

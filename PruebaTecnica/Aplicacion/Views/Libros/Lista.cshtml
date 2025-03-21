@@ -1,0 +1,92 @@
+﻿@{
+    ViewData["Title"] = "Libro";
+}
+
+@using Servicio.DTOs
+@model ICollection<LibroDTOs>;
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+    function confirmarEliminacion(id) {
+        Swal.fire({
+            title: "¿Estás seguro?",
+            text: "¡No podrás revertir esto!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#d33",
+            cancelButtonColor: "#3085d6",
+            confirmButtonText: "Sí, eliminar",
+            cancelButtonText: "Cancelar"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = "/Libros/EliminarLibro/" + id;
+            }
+        });
+    }
+    function soloLetras(event) {
+        var charCode = event.which || event.keyCode;
+        var char = String.fromCharCode(charCode);
+        var regex = /^[A-Za-zÁÉÍÓÚáéíóúñÑ ]+$/;
+        return regex.test(char);
+    }
+</script>
+
+@if (TempData["Mensaje"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        @TempData["Mensaje"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+@if (TempData["ErrorMensaje"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        @TempData["ErrorMensaje"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+<div class="row">
+    <center>
+        <h1>Lista de Libros </h1>
+    </center>
+ 
+</div>
+
+<div class="row">
+    <div class="d-grid gap-2">
+        <a asp-controller="Libros" asp-action="AgregarLibro" class="btn btn-success">Agregar</a>
+    </div>
+</div>
+
+
+<div class="row" style="padding:10px">
+    <table class="table table-info table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Título</th>
+                <th>descripción</th>
+                <th>Nombre autor</th>
+                <th>Modificar</th>
+                <th>Eliminar</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var Item in Model)
+            {
+                <tr>
+                    <td>@Item.Id</td>
+                    <td>@Item.Titulo</td>
+                    <td>@Item.Descripcion</td>
+                    <td>@Item.NombreAutor</td>
+                      <td><a asp-controller="Libros" asp-route-Id="@Item.Id" asp-action="ModificarLibro" class="btn btn-warning">Modificar</a></td>
+                    <td><button class="btn btn-danger" onclick="confirmarEliminacion(@Item.Id)">Eliminar</button></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
