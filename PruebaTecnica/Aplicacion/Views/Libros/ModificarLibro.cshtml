@@ -19,20 +19,20 @@
 
 <diw class="row">
     <div class="col-sm-8 ">
-        <h1>Agregar Autor</h1>
+        <h1>Modificar Libro</h1>
         <form asp-controller="Libros" asp-action="EditarLibro" method="post">
             <input asp-for="Id" type="hidden" />
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Libro</label>
-                <input asp-for="Titulo" type="text" onkeypress="return soloLetras(event)" class="form-control" placeholder="Titulo del libro">
+                <input asp-for="Titulo" type="text" onkeypress="return soloLetras(event)" class="form-control" placeholder="Titulo del libro" required>
             </div>
             <div class="mb-3">
                 <label class="form-label">Descripción </label>
-                <textarea asp-for="Descripcion" type="text" onkeypress="return soloLetras(event)" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <textarea asp-for="Descripcion" type="text" onkeypress="return soloLetras(event)" class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
             </div>
             <div class="mb-3">
                 <label for="autor">Selecciona un Autor:</label>
-                <select asp-for="AutorId" class="form-control">
+                <select asp-for="AutorId" class="form-control" required>
                     <option value="">Seleccione un autor</option>
                     @foreach (var item in ViewBag.Autores)
                     {

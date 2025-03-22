@@ -78,21 +78,14 @@ namespace Servicio.Servicios.Repositorio
         public async Task<string> UpdateLibroServe(LibroDTOs _libroDTOs)
         {
             string Respuesta = string.Empty;
-            if (await _libroRepo.ExisteLibroNombreRepo(_libroDTOs.Titulo) == false)
+            Libro _libro = _mapper.Map<Libro>(_libroDTOs);
+            if (await _libroRepo.UpdateLibroRepo(_libro) == true)
             {
-                Libro _libro = _mapper.Map<Libro>(_libroDTOs);
-                if (await _libroRepo.UpdateLibroRepo(_libro) == true)
-                {
-                    Respuesta = "guardado";
-                }
-                else
-                {
-                    Respuesta = "error";
-                }
+                Respuesta = "guardado";
             }
             else
             {
-                Respuesta = "existe";
+                Respuesta = "error";
             }
             return Respuesta;
         }

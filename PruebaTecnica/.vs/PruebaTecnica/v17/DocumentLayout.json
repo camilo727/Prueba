@@ -1,12 +1,71 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\camil\\source\\repos\\PruebaTecnica\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\camil\\Documents\\GitHub\\Prueba\\PruebaTecnica\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F8835193-11EA-4D71-85C7-5A8447EA90EB}|Aplicacion\\Aplicacion.csproj|c:\\users\\camil\\documents\\github\\prueba\\pruebatecnica\\aplicacion\\views\\libros\\lista.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F8835193-11EA-4D71-85C7-5A8447EA90EB}|Aplicacion\\Aplicacion.csproj|solutionrelative:aplicacion\\views\\libros\\lista.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8835193-11EA-4D71-85C7-5A8447EA90EB}|Aplicacion\\Aplicacion.csproj|c:\\users\\camil\\documents\\github\\prueba\\pruebatecnica\\aplicacion\\views\\autor\\lista.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F8835193-11EA-4D71-85C7-5A8447EA90EB}|Aplicacion\\Aplicacion.csproj|solutionrelative:aplicacion\\views\\autor\\lista.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8835193-11EA-4D71-85C7-5A8447EA90EB}|Aplicacion\\Aplicacion.csproj|c:\\users\\camil\\documents\\github\\prueba\\pruebatecnica\\aplicacion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8835193-11EA-4D71-85C7-5A8447EA90EB}|Aplicacion\\Aplicacion.csproj|solutionrelative:aplicacion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Lista.cshtml",
+              "DocumentMoniker": "C:\\Users\\camil\\Documents\\GitHub\\Prueba\\PruebaTecnica\\Aplicacion\\Views\\Libros\\Lista.cshtml",
+              "RelativeDocumentMoniker": "Aplicacion\\Views\\Libros\\Lista.cshtml",
+              "ToolTip": "C:\\Users\\camil\\Documents\\GitHub\\Prueba\\PruebaTecnica\\Aplicacion\\Views\\Libros\\Lista.cshtml",
+              "RelativeToolTip": "Aplicacion\\Views\\Libros\\Lista.cshtml",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAYwFkAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-22T02:18:25.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\camil\\Documents\\GitHub\\Prueba\\PruebaTecnica\\Aplicacion\\Program.cs",
+              "RelativeDocumentMoniker": "Aplicacion\\Program.cs",
+              "ToolTip": "C:\\Users\\camil\\Documents\\GitHub\\Prueba\\PruebaTecnica\\Aplicacion\\Program.cs",
+              "RelativeToolTip": "Aplicacion\\Program.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAqwBsAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T02:17:52.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Lista.cshtml",
+              "DocumentMoniker": "C:\\Users\\camil\\Documents\\GitHub\\Prueba\\PruebaTecnica\\Aplicacion\\Views\\Autor\\Lista.cshtml",
+              "RelativeDocumentMoniker": "Aplicacion\\Views\\Autor\\Lista.cshtml",
+              "ToolTip": "C:\\Users\\camil\\Documents\\GitHub\\Prueba\\PruebaTecnica\\Aplicacion\\Views\\Autor\\Lista.cshtml",
+              "RelativeToolTip": "Aplicacion\\Views\\Autor\\Lista.cshtml",
+              "ViewState": "AQIAAFAAAAAAAAAAAAAqwGUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-22T02:16:59.546Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

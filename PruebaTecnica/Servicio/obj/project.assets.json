@@ -4095,11 +4095,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\camil\\source\\repos\\PruebaTecnica\\Servicio\\Servicio.csproj",
+      "projectUniqueName": "C:\\Users\\camil\\Documents\\GitHub\\Prueba\\PruebaTecnica\\Servicio\\Servicio.csproj",
       "projectName": "Servicio",
-      "projectPath": "C:\\Users\\camil\\source\\repos\\PruebaTecnica\\Servicio\\Servicio.csproj",
+      "projectPath": "C:\\Users\\camil\\Documents\\GitHub\\Prueba\\PruebaTecnica\\Servicio\\Servicio.csproj",
       "packagesPath": "C:\\Users\\camil\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\camil\\source\\repos\\PruebaTecnica\\Servicio\\obj\\",
+      "outputPath": "C:\\Users\\camil\\Documents\\GitHub\\Prueba\\PruebaTecnica\\Servicio\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4121,11 +4121,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\camil\\source\\repos\\PruebaTecnica\\Infraestructura\\Infraestructura.csproj": {
-              "projectPath": "C:\\Users\\camil\\source\\repos\\PruebaTecnica\\Infraestructura\\Infraestructura.csproj"
+            "C:\\Users\\camil\\Documents\\GitHub\\Prueba\\PruebaTecnica\\Infraestructura\\Infraestructura.csproj": {
+              "projectPath": "C:\\Users\\camil\\Documents\\GitHub\\Prueba\\PruebaTecnica\\Infraestructura\\Infraestructura.csproj"
             },
-            "C:\\Users\\camil\\source\\repos\\PruebaTecnica\\Modelos\\Modelos.csproj": {
-              "projectPath": "C:\\Users\\camil\\source\\repos\\PruebaTecnica\\Modelos\\Modelos.csproj"
+            "C:\\Users\\camil\\Documents\\GitHub\\Prueba\\PruebaTecnica\\Modelos\\Modelos.csproj": {
+              "projectPath": "C:\\Users\\camil\\Documents\\GitHub\\Prueba\\PruebaTecnica\\Modelos\\Modelos.csproj"
             }
           }
         }

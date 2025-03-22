@@ -100,21 +100,14 @@ namespace Servicio.Servicios.Repositorio
         public async Task<string> UpdateAutorServi(AutorDTOs _autorDTOs)
         {
             string Respueta= string.Empty;
-            if (await _autorRepo.ExisteAutoByNombreRepo(_autorDTOs.Nombre)==false)
+            Autores autores = _mapper.Map<Autores>(_autorDTOs);
+            if (await _autorRepo.UpdateAutoresByIdRepo(autores) == true)
             {
-               
-                    Autores autores = _mapper.Map<Autores>(_autorDTOs);
-                if (await _autorRepo.AddAutoresRepo(autores) == true)
-                {
-                    Respueta = "guardado";
-                }
-                else {
-                    Respueta = "error";
-                }
+                Respueta = "guardado";
             }
             else
             {
-                Respueta = "existe";
+                Respueta = "error";
             }
             return Respueta;
         }
