@@ -1,10 +1,4 @@
 ## Gestión de Biblioteca - ASP.NET
-## Tabla de Contenido
-
-- [Descripción](Descripción)
-- [Configuración y Ejecución](Configuración-y-Ejecución)
-- [Capturas de Pantalla](Capturas-de-Pantalla)
-- [Diagrama Entidad-Relación](Diagrama-Entidad-Relación)
 
 ## Descripción
 ***
